@@ -1,0 +1,221 @@
+@import "tailwindcss";
+
+*{
+    box-sizing: border-box;
+}
+body{
+    overflow-x:hidden;
+}
+
+.common-bg{
+    background-color: #0a0a0a;
+}
+.gradient-text {
+    background: linear-gradient(90deg, #22d3ee, #3b82f6, #9333ea);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.aside {
+    height: 100vh;
+    width: 40%;
+    backdrop-filter: blur(17px);
+    position: absolute;
+    opacity: 10;
+    top: 0;
+    right: -55%;
+}
+
+@media screen and (max-width:500px) {
+    .aside {
+        width: 55%;
+    }
+    .hero-text::before{
+        top: -0px;
+    }
+}
+
+.sidebar {
+    height: 10%;
+    width: 100%;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    cursor: pointer;
+}
+
+.close{
+    height: 10%;
+    width: 100%;
+    position: relative;
+}
+
+.close-i {
+    border-radius: 50%;
+    /*background-color: grey;*/
+    font-size: 20px;
+    position: absolute;
+    left: 10px;
+    top: 5px;
+
+}
+
+.linkEffect{
+    transition: color 0.3s ease;
+}
+
+.linkEffect--rightToLeft::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -3px;
+    right: 100%;
+    background-color: #615fff;
+    transition: width 0.3s ease, right 0.3s ease;
+}
+
+.linkEffect--rightToLeft:hover::after {
+    background-color: #615fff;
+    width: 100%;
+    right: 0;
+}
+
+.linkEffect1 {
+    position: relative;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.linkEffect--rightToLeft1::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -1px;
+    right: 100%;
+    background-color: #615fff;
+    transition: width 0.3s ease, right 0.3s ease;
+}
+
+.linkEffect--rightToLeft1:hover::after {
+    background-color: #615fff;
+    width: 100%;
+    right: 0;
+}
+
+.nav-comp{
+    font-weight:bold;
+    cursor: pointer;
+}
+
+.hero-text{
+    position: relative;
+}
+
+.hero-text::before{
+    content: "Hi I'm";
+    position: absolute;
+    top: -35px;
+    left: 2px;
+    font-size: 0.6em;
+}
+
+.hero-img{
+    border-color: #615fff;
+}
+
+
+.about-p-div{
+    word-spacing: 0.2em;
+}
+@media screen and (max-width:500px) and (min-width:300px){
+.about2{
+    justify-content: center;
+}
+
+}
+@media screen and (max-width:768px) and (min-width:200px){
+    .about1{
+        display: none;
+    }
+    .about2{
+        align-items: center;
+    }
+}
+
+
+
+@media screen and (min-width:768px){
+    .about1{
+        display: flex;
+    }
+}
+
+.projects-container {
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+}
+
+.projects-container::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+}
+
+@media screen and (max-width:500px) and (min-width:200px){
+    .project-p{
+        display: none;
+    }
+}
+
+@media screen and (max-width:300px) and (min-width:200px){
+    .info-before{
+        display: none;
+    }
+}
+
+.simple-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact-input{
+    padding: 10px;
+    border: 1px solid #314158;
+    width: 80%;
+}
+
+@media screen and (max-width:1280px) and (min-width:840px){
+    .contact-input{
+        width: 60%;
+    }
+}
+
+.main-hero-img{
+    height: 300px;
+    width: 300px;
+    border-radius: 100%;
+}
+
+@media screen  and (min-width:840px) and (max-width:1280px){
+    .main-hero-img{
+        height: 350px;
+        width: 350px;
+    }
+}
+@media screen  and (min-width:200px) and (max-width:300px){
+    .main-hero-img{
+        height: 200px;
+        width: 200px;
+    }
+}
+
+@media screen  and (min-width:1280px){
+    .main-hero-img{
+        height: 400px;
+        width: 400px;
+    }
+}
+.error-text{
+    color: red;
+}
