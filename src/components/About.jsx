@@ -2,6 +2,8 @@ import React from 'react'
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/all";
+import myPic from "../assets/temp3.jpeg";
+
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -35,14 +37,14 @@ const About = () => {
                 pin: true,
             },
         });
-
     }, []);
+
     return (
         <div id="about" className="main-about  z-10 h-screen sm:h-auto min-h-[60dvh] sm:min-h-[80dvh] md:h-screen w-screen flex flex-col justify-start sm:justify-center  items-center md:flex-row ">
             <div className="about1 h-[50%] md:h-full w-[40dvw] justify-center items-center  ">
                 <div className="myAboutPic about-comp md:block  hidden h-[80%] min-w-65 min-h-62.5 sm:w-[42%]  md:w-[52%]  lg:w-[58%] mt-10  z-10 ">
                     <div className="hero-img z-0 bg-cover bg-center bg-black border-5  h-full w-full rounded-bl-full">
-                        <img src="../assets/temp3.jpeg" alt="myPic" className="rounded-bl-full bg-center opacity-100 h-full w-full" />
+                        <img src={myPic} alt="myPic" className="rounded-bl-full bg-center opacity-100 h-full w-full" />
                     </div>
                 </div>
             </div>

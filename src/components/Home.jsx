@@ -11,17 +11,16 @@ import Hero from "./Hero";
 const Home = () => {
   return (
     <>
-     <Navbar>
+     <Navbar/>
         <div className='overflow-x-hidden'>
+            <Hero/>
             <About/>
+            <Education/>
+            <Skills/>
+            <Projects/>
             <Contact/>
             <Footer/>
-            <Education/>
-            <Projects/>
-            <Skills/>
-            <Hero/>
        </div>
-     </Navbar>
     </>
   )
 }

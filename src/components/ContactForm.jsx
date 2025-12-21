@@ -18,10 +18,10 @@ const ContactForm = () => {
     } = useForm();
 
      const onSubmit = (data) => {
-        console.log("Form data",data);
+        console.log("Form data",data); 
 
-        emailjs.send('service_xmgxezb', 'template_zb5aiif',data, {
-                publicKey: 'YwrRfkICUTPRi7c2s',
+        emailjs.send('service_wgb9gkr', 'template_did5z0o',data, {
+                publicKey: 'qsS1cozi-uPBsJMLn',
             })
             .then(
                 () => {
@@ -78,12 +78,10 @@ const ContactForm = () => {
                     <textarea name="message" placeholder="Message" id="msg" className="contact-input rounded-sm h-auto min-h-[8em] focus:outline-none"
                         {...register("message")}
                     ></textarea>
-                    {/*<button type="submit" className="contact-btn p-3 bg-cyan-600 w-[10%] rounded-md">Send</button>*/}
                     <button type="submit" className="contact-btn cursor-pointer px-6 py-2 bg-[#615fff] text-black w-fit text-lg font-semibold rounded-md ">Send</button>
                 </form>
             </div>
         </>
     )
 }
-
 export default ContactForm

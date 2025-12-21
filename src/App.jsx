@@ -1,6 +1,5 @@
-import React from 'react'
+import React,{ useContext } from 'react'
 import "./App.css"
-import { useContext } from 'react'
 import { AppContext } from './context/Context'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import Home from "../src/components/Home"

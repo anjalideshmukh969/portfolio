@@ -6,6 +6,7 @@ import { IoClose } from "react-icons/io5";
 import { AppContext } from "../context/Context";
 import { BsBrightnessHigh } from "react-icons/bs";
 import { MdOutlineDarkMode } from "react-icons/md";
+import Resume from "../assets/AnjaliResume.pdf"
 
 
 
@@ -84,7 +85,7 @@ const Navbar = () => {
     return (
         <>
             <div className={`main-nav  w-full sticky flex top-0 justify-between  items-center  h-[10dvh] px-5  z-50 backdrop-filter backdrop-blur-[17px] `}>
-                <div className="logo text-xl font-bold bg-linear-to-br from-indigo-500  to-indigo-600 bg-clip-text text-transparent ">SMN</div>
+                <div className="logo text-xl font-bold bg-linear-to-br from-indigo-500  to-indigo-600 bg-clip-text text-transparent ">Portfolio</div>
                 <TiThMenu className="visible md:hidden h-6 w-6 cursor-pointer" ref={menuRef} />
 
                 <div
@@ -98,7 +99,7 @@ const Navbar = () => {
                     {/*<button className="bg-[#de7595] text-black p-1.5 rounded-lg font-semibold">Download CV</button>*/}
 
 
-                    <a href="/assets/Shaik_Mohammed_Noushad_Resume.pdf" download>
+                    <a href="/assets/AnjaliResume.pdf" download>
                         <button
                             className="nav-comp bg-indigo-500 text-black p-1.5 px-2 min-w-fit text-sm flex flex-wrap md:rounded-lg md:font-semibold cursor-pointer">Download
                             CV
@@ -120,7 +121,7 @@ const Navbar = () => {
                     <button onClick={() => { handleSideLinkClick("skills") }} className="sidebar linkEffect1  linkEffect--rightToLeft1">Skills</button>
                     <button onClick={() => { handleSideLinkClick("projects") }} className="sidebar linkEffect1  linkEffect--rightToLeft1">Projects</button>
                     <button onClick={() => { handleSideLinkClick("contact") }} className="sidebar linkEffect1  linkEffect--rightToLeft1">Contact Me</button>
-                    <a href="/assets/Shaik_Mohammed_Noushad_Resume.pdf" className="aside-cvBtn sidebar linkEffect1  linkEffect--rightToLeft1" download>
+                    <a href="/assets/AnjaliResume.pdf" className="aside-cvBtn sidebar linkEffect1  linkEffect--rightToLeft1" download>
                         <button
                             className="nav-comp bg-indigo-500 text-black p-1.5 px-2 min-w-fit text-sm flex flex-wrap rounded-lg cursor-pointer">Download
                             CV

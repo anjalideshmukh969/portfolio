@@ -1,107 +1,77 @@
-import React from "react";
+import React, { useRef } from 'react';
+import Project from "./Project.jsx";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/all";
+import Shoppy from "../assets/Shoppy.jpeg"
 
 gsap.registerPlugin(ScrollTrigger);
 
-/* ---------------- Project Card ---------------- */
-const ProjectCard = ({ project }) => {
-    return (
-        <>
-            <div className="project-part1 h-[60%] sm:h-full w-full sm:w-[45%] bg-slate-700 rounded-t-lg sm:rounded-t-none sm:rounded-l-lg flex justify-center items-center py-1 px-4">
-                <img src={project.img} alt="Project" className="h-full w-full object-contain rounded-xl" />
-            </div>
-
-            <div className="project-part2 p-3 md:p-6 h-[50%] sm:h-full w-full sm:w-[55%] bg-slate-800 rounded-b-lg sm:rounded-b-none sm:rounded-r-lg flex flex-col gap-4 text-white">
-                <h1 className="text-2xl font-bold">{project.title}</h1>
-                <p className="text-sm sm:text-lg">{project.desc}</p>
-                <div className="flex gap-2 flex-wrap">
-                    {project.techStack.map((tech, i) => (
-                        <span
-                            key={i}
-                            className="py-1 px-3 text-sm rounded-md bg-[#293556]"
-                        >
-                            {tech}
-                        </span>
-                    ))}
-                </div>
-
-                <a
-                    href={project.vc_link}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="px-3 py-2 bg-indigo-500 text-black font-semibold rounded-sm w-fit">
-                    View Code
-                </a>
-            </div>
-        </>
-    );
-};
-/* ---------------- Main Projects Component ---------------- */
 const Projects = () => {
-    const projects = [
-        {
-            id: 1,
-            title: "Recurring Date Picker",
-            img: "/assets/recc_date_picker.png",
-            desc:
-                "A customizable React component for scheduling repeating events with flexible recurrence rules.",
-            techStack: ["React", "Next.js", "MongoDB", "Tailwind", "REST API"],
-            vc_link:
-                "https://github.com/ShaikNoushad-309/Recurring-Date-Picker",
-        },
-        {
-            id: 2,
-            title: "Web Password Manager",
-            img: "/assets/pass_man_2.png",
-            desc:
-                "Perform CRUD operations on encrypted passwords in a clean responsive UI.",
-            techStack: ["React", "Node", "Express", "MongoDB", "Tailwind"],
-            vc_link:
-                "https://github.com/ShaikNoushad-309/Password-Manager",
-        },
+    const containerRef = useRef(null);
+    const projectsRef = useRef(null);
+
+    const projects = [{
+        id: 1,
+        title: "Recurring Date Picker",
+        img: "/assets/recc_date_picker.png",
+        desc: "A customizable React component for scheduling repeating events and tasks with flexible recurrence rules (daily, weekly, monthly, custom).",
+        techStack: ["React", "Next.js", "mongoDB", "mongoose", "jwt", "Tailwind CSS", "Next.js", "Rest API"],
+        vc_link: "https://github.com/ShaikNoushad-309/Recurring-Date-Picker"
+    },
+    {
+        id: 2,
+        title: "Web Password Manager",
+        img: "/assets/pass_man_2.png",
+        desc: " Perform all CRUD operations—add, view, edit, and delete entries containing URLs, usernames, and encrypted passwords within a clean, responsive interface.",
+        techStack: ["React", "Node.js", "Express.js", "MongoDB", "Mongoose", "Tailwind CSS", "Rest API"],
+        vc_link: "https://github.com/ShaikNoushad-309/Password-Manager"
+    },
+    {
+        id: 3,
+        title: "Redesign Shoppy's UI with focus on responsiveness and animations",
+        img: {Shoppy},
+        desc: "A pixel-perfect, responsive clone of Twitter’s main interface built purely with HTML and CSS. ",
+        techStack: ["HTML", "CSS", "Javascript"],
+        vc_link: "https://github.com/anjalideshmukh969/Animations"
+    }
     ];
 
     useGSAP(() => {
-        const sections = gsap.utils.toArray(".project-box");
-
+        let sections = gsap.utils.toArray(".project-box");
         gsap.to(sections, {
             xPercent: -100 * (sections.length - 1),
             ease: "none",
             scrollTrigger: {
+                // trigger:".projects-container",
                 trigger: "#projects",
                 scrub: 1,
                 pin: true,
                 snap: 1 / (sections.length - 1),
-                end: () =>
-                    "+=" +
-                    document.querySelector(".projects-scroll-container")
-                        .offsetWidth,
-            },
-        });
-    }, { scope: "#projects" });
+                end: () => "+=" + document.querySelector(".projects-scroll-container").offsetWidth + "+100",
+            }
+        })
+    }, []);
 
     return (
-        <div
-            id="projects"
-            className="min-h-screen w-screen flex flex-col items-center pt-20 gap-10"
-        >
-            <h1 className="text-5xl xl:text-6xl font-bold">Projects</h1>
+        <div id="projects" className="h-auto min-h-screen w-screen flex flex-col justify-start pt-20 items-center gap-7 sm:gap-0 md:gap-10 z-10 relative">
+            <div className="hero-text-comp text-5xl xl:text-6xl font-bold block">
+                Projects
+            </div>
 
-            <div className="relative w-full h-[80vh] overflow-hidden">
-                <div
-                    className="projects-scroll-container absolute left-0 flex h-full items-center gap-14 pl-10"
-                    style={{ width: "max-content" }}
-                >
-                    {projects.map((project) => (
-                        <div
-                            key={project.id}
-                            className="project-box h-[85%] w-[90vw] lg:w-[65vw] rounded-lg flex flex-col sm:flex-row shadow-xl"
-                        >
-                            <ProjectCard project={project} />
+
+            <div ref={containerRef} className="projects-container relative w-full h-[80dvh] sm:h-[65dvh]  overflow-hidden">
+
+
+                <div ref={projectsRef} className="projects-scroll-container absolute left-0 flex h-full items-center gap-14 pl-10"
+                    style={{ width: "max-content" }}>
+
+                    {projects.map((project) => {
+                        return <div key={project.id} className="project-box h-[90%] sm:h-[80%] lg:w-[65dvw] xl:w-[60dvw] sm:w-[90dvw] w-[95dvw] max-w-screen min-w-[60dvw] rounded-lg  flex flex-col sm:flex-row justify-center items-center shadow-xl">
+                            <Project myProject={project} />
                         </div>
-                    ))}
+                    })}
+
                 </div>
             </div>
         </div>

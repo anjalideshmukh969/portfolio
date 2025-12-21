@@ -8,6 +8,8 @@ import { RiTailwindCssFill } from "react-icons/ri";
 import { GrMysql } from "react-icons/gr";
 import { FaGitAlt } from "react-icons/fa";
 import { useGSAP } from "@gsap/react";
+import { SiTypescript } from "react-icons/si";
+import { SiJavascript } from "react-icons/si";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
 
@@ -44,81 +46,74 @@ const Skills = () => {
                 <span className="box">Skills</span>
             </div>
             <div className=" boxes-container  container gap-7 h-[80%] w-[80%] flex  flex-wrap justify-center items-center   ">
+
                 <div className="box text-lg flex flex-col gap-2 justify-center items-center">
-                    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
-                        <img alt="js" loading="lazy"
-                            className="rounded-lg  transition-transform duration-300 md:hover:scale-110 h-20 w-20 "
-                            src="/assets/js_logo.png" />
-                    </a>
-                    Javascript
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+                        target="_blank" rel="noreferrer">
+                        <SiJavascript className="h-20 w-20 md:hover:scale-110 cursor-pointer text-yellow-400 rounded-2xl" />
+                    </a>JavaScript
                 </div>
 
                 <div className="box text-lg flex flex-col gap-2 justify-center items-center">
                     <a href="https://react.dev/" target="_blank">
                         <FaReact className="h-20 w-20 md:hover:scale-110 cursor-pointer text-blue-500" />
-                    </a>
-                    React
+                    </a>React
                 </div>
+
                 <div className="box text-lg flex flex-col gap-2 justify-center items-center">
                     <a href="https://nodejs.org/en" target="_blank">
                         <FaNodeJs className="h-20 w-20 md:hover:scale-110 cursor-pointer  text-green-400" />
-                    </a>
-                    Node.js
+                    </a>Node.js
                 </div>
+
                 <div className="box text-lg flex flex-col gap-2 justify-center items-center">
                     <a href="https://expressjs.com/" target="_blank">
                         <SiExpress className="h-20 w-20 md:hover:scale-110   cursor-pointer" />
-                    </a>
-                    Express.js
+                    </a>Express.js
                 </div>
+
                 <div className="box text-lg flex flex-col gap-2 justify-center items-center">
                     <a href="https://www.mongodb.com/" target="_blank">
                         <BiLogoMongodb className="h-20 w-20 md:hover:scale-110  cursor-pointer text-green-900" />
-                    </a>
-                    MongoDB
+                    </a>MongoDB
                 </div>
+
                 <div className="box text-lg flex flex-col gap-2 justify-center items-center">
                     <a href="https://nextjs.org/" target="_blank">
                         <img alt="next.js" loading="lazy"
                             className=" transition-transform duration-300 md:hover:scale-110 h-20 w-20"
                             src="https://sagarshah.dev/_next/static/media/icon-nextjs.3f6cd734.svg" />
-                    </a>
-                    Next.js
-                </div>
-                <div className="box text-lg flex flex-col gap-2 justify-center items-center">
-
-                    <a href="https://socket.io/" target="_blank">
-                        <SiSocketdotio className=" h-20 w-20 md:hover:scale-110 cursor-pointer " />
-                    </a>
-                    Socket.io
+                    </a> Next.js
                 </div>
 
                 <div className="box text-lg flex flex-col gap-2 justify-center items-center">
                     <a href="https://tailwindcss.com/" target="_blank">
                         <RiTailwindCssFill className="h-20 w-20 md:hover:scale-110 cursor-pointer text-blue-400" />
-                    </a>
-                    TailwindCSS
+                    </a> TailwindCSS
                 </div>
+
                 <div className="box text-lg flex flex-col gap-2 justify-center items-center">
-                    <a href="https://www.mysql.com/" target="_blank">
-                        <GrMysql className=" h-20 w-20 md:hover:scale-110 cursor-pointer text-blue-400" />
-                    </a>
-                    My SQL
+                    <a href="https://socket.io/" target="_blank">
+                        <SiSocketdotio className=" h-20 w-20 md:hover:scale-110 cursor-pointer " />
+                    </a>Socket.io
                 </div>
+
                 <div className="box text-lg flex flex-col gap-2 justify-center items-center">
                     <a href="https://git-scm.com/" target="_blank">
                         <FaGitAlt className="h-20 w-20  md:hover:scale-110 cursor-pointer text-orange-500" />
-                    </a>
-                    Git & Github
+                    </a>Git & Github
                 </div>
+
+
                 <div className="box text-lg flex flex-col gap-2 justify-center items-center">
-                    <a href="https://gsap.com/" target="_blank">
-                        <img alt="gsap" loading="lazy"
-                            className="transition-transform   rounded-lg duration-300 md:hover:scale-110 h-20 w-20"
-                            src="/assets/gsap_logo.png" />
-                    </a>
-                    GSAP
+                    <a href="https://www.typescriptlang.org/" target="_blank" rel="noreferrer">
+                        <SiTypescript className="h-20 w-20 md:hover:scale-110 cursor-pointer text-blue-500 rounded-2xl" />
+                    </a>TypeScript
                 </div>
+
+
+
+
             </div>
         </div>
     );

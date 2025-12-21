@@ -102,12 +102,8 @@ const Navigation = () => {
                     <button onClick={()=>{handleScrollToSection("skills")}} className="sidebar linkEffect1  linkEffect--rightToLeft1">Skills</button>
                     <button onClick={()=>{handleScrollToSection("projects")}} className="sidebar linkEffect1  linkEffect--rightToLeft1">Projects</button>
                     <button onClick={()=>{handleScrollToSection("contact")}} className="sidebar linkEffect1  linkEffect--rightToLeft1">Contact Me</button>
-
                 </div>
             </div>
         </>
-    
-  )
-}
-
+  )}
 export default Navigation
