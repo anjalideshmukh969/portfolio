@@ -4,39 +4,39 @@ import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/all";
 import Shoppy from "../assets/Shoppy.jpeg"
+import vAI from "../assets/vAI.jpeg"
+import ecomm from "../assets/ecomm.png"
+
 
 gsap.registerPlugin(ScrollTrigger);
-
 const Projects = () => {
     const containerRef = useRef(null);
     const projectsRef = useRef(null);
 
     const projects = [{
         id: 1,
-        title: "Recurring Date Picker",
-        img: "/assets/recc_date_picker.png",
-        desc: "A customizable React component for scheduling repeating events and tasks with flexible recurrence rules (daily, weekly, monthly, custom).",
-        techStack: ["React", "Next.js", "mongoDB", "mongoose", "jwt", "Tailwind CSS", "Next.js", "Rest API"],
-        vc_link: "https://github.com/ShaikNoushad-309/Recurring-Date-Picker"
+        title: "Virtual AI assistant",
+        img: vAI,
+        desc: "Working on this project.....",
+        techStack: ["React", "Next.js", "mongoDB", "mongoose", "jwt", "Tailwind CSS", "Next.js", "Rest API", "NLP",],
+        vc_link: "https://github.com/anjalideshmukh969/Minor-Project"
     },
     {
         id: 2,
-        title: "Web Password Manager",
-        img: "/assets/pass_man_2.png",
-        desc: " Perform all CRUD operations—add, view, edit, and delete entries containing URLs, usernames, and encrypted passwords within a clean, responsive interface.",
-        techStack: ["React", "Node.js", "Express.js", "MongoDB", "Mongoose", "Tailwind CSS", "Rest API"],
-        vc_link: "https://github.com/ShaikNoushad-309/Password-Manager"
+        title: "E-commerce backend",
+        img: ecomm,
+        desc: "E-commerce backend system with secure authentication,implemented CRUD operations with structured data validation and error handling,Integrate Imagekit and multer,tested APIs via postman and added nodemailer for emails and OTPs, this project helped me strenthen my understanding in backend development ",
+        techStack: ["MERN Stack","EJS", "Rest API"],
+        vc_link: "https://github.com/anjalideshmukh969/Learning-backend"
     },
     {
         id: 3,
-        title: "Redesign Shoppy's UI with focus on responsiveness and animations",
-        img: {Shoppy},
-        desc: "A pixel-perfect, responsive clone of Twitter’s main interface built purely with HTML and CSS. ",
-        techStack: ["HTML", "CSS", "Javascript"],
+        title: "Shoppy",
+        img: Shoppy,
+        desc: "Redesign a E-commerce website Shoppy's UI with focus on animation and responsiveness.",
+        techStack: ["HTML", "CSS", "Javascript", "ScrollTrigger"],
         vc_link: "https://github.com/anjalideshmukh969/Animations"
-    }
-    ];
-
+    }];
     useGSAP(() => {
         let sections = gsap.utils.toArray(".project-box");
         gsap.to(sections, {
@@ -55,14 +55,13 @@ const Projects = () => {
 
     return (
         <div id="projects" className="h-auto min-h-screen w-screen flex flex-col justify-start pt-20 items-center gap-7 sm:gap-0 md:gap-10 z-10 relative">
-            <div className="hero-text-comp text-5xl xl:text-6xl font-bold block">
-                Projects
-            </div>
-
+            <h1 className="text-4xl md:text-5xl font-normal tracking-[0.3em] uppercase mb-12 relative
+             after:content-[''] after:absolute after:left-1/2 after:-bottom-3 after:h-[1px] after:w-16 
+             after:-translate-x-1/2 after:bg-gray-400 hover:after:w-28 after:transition-all">
+             Projects
+             </h1>
 
             <div ref={containerRef} className="projects-container relative w-full h-[80dvh] sm:h-[65dvh]  overflow-hidden">
-
-
                 <div ref={projectsRef} className="projects-scroll-container absolute left-0 flex h-full items-center gap-14 pl-10"
                     style={{ width: "max-content" }}>
 
@@ -71,7 +70,6 @@ const Projects = () => {
                             <Project myProject={project} />
                         </div>
                     })}
-
                 </div>
             </div>
         </div>

@@ -84,7 +84,7 @@ const Navigation = () => {
                     <button  onClick={()=>{handleScrollToSection("home")}} className="nav-comp linkEffect  linkEffect--rightToLeft ">Home</button>
                     <button  onClick={()=>{handleScrollToSection("about")}} className="nav-comp linkEffect  linkEffect--rightToLeft">About Me</button>
                     <button  onClick={()=>{handleScrollToSection("skills")}} className="nav-comp linkEffect  linkEffect--rightToLeft">Skills</button>
-                    <button onClick={()=>{handleScrollToSection("projects")}}  className="nav-comp linkEffect  linkEffect--rightToLeft">Projects</button>
+                    {/* <button onClick={()=>{handleScrollToSection("projects")}}  className="nav-comp linkEffect  linkEffect--rightToLeft">Projects</button> */}
                     <button  onClick={()=>{handleScrollToSection("contact")}} className="nav-comp linkEffect  linkEffect--rightToLeft">Contact Me</button>
                     {/*<button className="bg-[#de7595] text-black p-1.5 rounded-lg font-semibold">Download CV</button>*/}
                     <button
@@ -100,7 +100,7 @@ const Navigation = () => {
                     <button onClick={()=>{handleSideLinkClick("home")}} className="sidebar linkEffect1  linkEffect--rightToLeft1">Home</button>
                     <button onClick={()=>{handleScrollToSection("about")}} className="sidebar linkEffect1  linkEffect--rightToLeft1">About Me</button>
                     <button onClick={()=>{handleScrollToSection("skills")}} className="sidebar linkEffect1  linkEffect--rightToLeft1">Skills</button>
-                    <button onClick={()=>{handleScrollToSection("projects")}} className="sidebar linkEffect1  linkEffect--rightToLeft1">Projects</button>
+                    {/* <button onClick={()=>{handleScrollToSection("projects")}} className="sidebar linkEffect1  linkEffect--rightToLeft1">Projects</button> */}
                     <button onClick={()=>{handleScrollToSection("contact")}} className="sidebar linkEffect1  linkEffect--rightToLeft1">Contact Me</button>
                 </div>
             </div>

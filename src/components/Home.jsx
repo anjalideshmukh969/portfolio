@@ -15,8 +15,8 @@ const Home = () => {
         <div className='overflow-x-hidden'>
             <Hero/>
             <About/>
-            <Education/>
             <Skills/>
+            <Education/>
             <Projects/>
             <Contact/>
             <Footer/>

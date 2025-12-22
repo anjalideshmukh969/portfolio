@@ -41,10 +41,13 @@ const Skills = () => {
 
     return (
         <div id="skills" className="mx-auto  h-auto min-h-screen w-screen flex flex-col pt-0 sm:pt-[15dvh]  items-center gap-7 sm:gap-0 md:gap-0 z-10">
-            <div className=" text-5xl mt-[10dvh] sm:mt-0 xl:text-6xl  font-bold block space-x-4">
-                <span className="box">My</span>
-                <span className="box">Skills</span>
-            </div>
+            <h1 className="text-4xl md:text-5xl font-normal tracking-[0.3em] uppercase mb-12 relative
+             after:content-[''] after:absolute after:left-1/2 after:-bottom-3 after:h-[1px] after:w-16 
+             after:-translate-x-1/2 after:bg-gray-400 hover:after:w-28 after:transition-all">
+             My Skills
+             </h1>
+
+
             <div className=" boxes-container  container gap-7 h-[80%] w-[80%] flex  flex-wrap justify-center items-center   ">
 
                 <div className="box text-lg flex flex-col gap-2 justify-center items-center">

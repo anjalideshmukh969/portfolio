@@ -41,19 +41,17 @@ const Education = () => {
             status: "Completed",
             year: "2022 - 2023",
             cgpa: "Percentage: 80.6",
-            description: "MadhyaPradesh Board Of Secondary Education"
+            description: "Completed my 12th with PCM from MadhyaPradesh Board Of Secondary Education"
         },
     ];
-
-
     return (
         <div id="education" className="mx-auto h-auto min-h-screen w-screen flex flex-col pt-0 sm:pt-[15dvh] items-center gap-7 z-10 px-4 ">
             {/* Header Section */}
-            <div className="text-5xl mt-[20dvh] sm:mt-0 xl:text-6xl font-bold block space-x-4">
-                <span className="edu-comp text-5xl xl:text-6xl font-bold block">
-                    Education
-                </span>
-            </div>
+            <h1 className="text-4xl md:text-5xl font-normal tracking-[0.3em] uppercase mb-12 relative
+             after:content-[''] after:absolute after:left-1/2 after:-bottom-3 after:h-[1px] after:w-16 
+             after:-translate-x-1/2 after:bg-gray-400 hover:after:w-28 after:transition-all">
+             Education
+             </h1>
             <div className="container text-white gap-7 h-auto w-[80%] lg:w-[80%] flex flex-col lg:flex-row justify-center items-start">
                 {/* Left Column - Education Details */}
                 <div className="w-full lg:w-2/3 flex flex-col gap-7">
@@ -61,14 +59,13 @@ const Education = () => {
                         <div
                             key={edu.id}
                             className="edu-comp w-full h-auto rounded-xl border-l-4 border-l-indigo-500 py-5 px-6 text-lg flex flex-col gap-2 justify-center items-start
-                                       hover:scale-[1.02] bg-slate-800 backdrop-blur-sm"
-                        >
+                                       hover:scale-[1.02] bg-slate-700 backdrop-blur-sm">
                             <div className="flex flex-col md:flex-row md:items-center md:justify-between w-full gap-2">
                                 <div className="flex flex-col">
-                                    <span className="text-2xl font-bold ">
+                                    <span className="text-2xl font-semibold ">
                                         {edu.title}
                                     </span>
-                                    <span className="text-lg text-cyan-400 font-medium">
+                                    <span className="text-lg text-cyan-500 font-medium">
                                         {edu.subtitle}
                                     </span>
                                 </div>
@@ -82,8 +79,8 @@ const Education = () => {
                             </span>
                             <div className="flex flex-wrap items-center gap-4 mt-2">
                                 <span className="text-gray-400"> 📅 {edu.year} </span>
-                                <span className="font-bold"> {edu.cgpa}</span>
-                                <span className="font-bold"> {edu.description}</span>
+                                <span className="font-semibold"> {edu.cgpa}</span>
+                                <span className="font-semibold"> {edu.description}</span>
                             </div>
                         </div>
                     ))}
