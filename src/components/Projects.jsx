@@ -26,7 +26,7 @@ const Projects = () => {
         title: "E-commerce backend",
         img: ecomm,
         desc: "E-commerce backend system with secure authentication,implemented CRUD operations with structured data validation and error handling,Integrate Imagekit and multer,tested APIs via postman and added nodemailer for emails and OTPs, this project helped me strenthen my understanding in backend development ",
-        techStack: ["MERN Stack","EJS", "Rest API"],
+        techStack: ["MERN Stack", "EJS", "Rest API"],
         vc_link: "https://github.com/anjalideshmukh969/Learning-backend"
     },
     {
@@ -36,7 +36,24 @@ const Projects = () => {
         desc: "Redesign a E-commerce website Shoppy's UI with focus on animation and responsiveness.",
         techStack: ["HTML", "CSS", "Javascript", "ScrollTrigger"],
         vc_link: "https://github.com/anjalideshmukh969/Animations"
+    },
+    {
+        id: 4,
+        title: "E-Mart",
+        // img: Shoppy,
+        desc: "E-Mart, a fully functional E-Commerce website ",
+        techStack: ["React.js", "Typescript", "Zustand", "Whatshapp,gmail & google maps API", "TailwindCSS", "Supabase"],
+        vc_link: "https://github.com/anjalideshmukh969/Typescript"
+    },
+    {
+        id: 4,
+        title: "UI",
+        // img: Shoppy,
+        desc: "Crafted Olive -webflow e-commerce using Tailwind, a utility first css framework.Leveraging utility-first approach has helped me sharpen my frontend skills, streamlining my workflow and improving overall development efficiency.",
+        techStack: ["HTML", "CSS", "Tailwind",],
+        vc_link: "https://github.com/anjalideshmukh969/Animations"
     }];
+    
     useGSAP(() => {
         let sections = gsap.utils.toArray(".project-box");
         gsap.to(sections, {
@@ -58,8 +75,8 @@ const Projects = () => {
             <h1 className="text-4xl md:text-5xl font-normal tracking-[0.3em] uppercase mb-12 relative
              after:content-[''] after:absolute after:left-1/2 after:-bottom-3 after:h-[1px] after:w-16 
              after:-translate-x-1/2 after:bg-gray-400 hover:after:w-28 after:transition-all">
-             Projects
-             </h1>
+                Projects
+            </h1>
 
             <div ref={containerRef} className="projects-container relative w-full h-[80dvh] sm:h-[65dvh]  overflow-hidden">
                 <div ref={projectsRef} className="projects-scroll-container absolute left-0 flex h-full items-center gap-14 pl-10"

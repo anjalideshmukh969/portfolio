@@ -6,7 +6,7 @@ import { IoClose } from "react-icons/io5";
 import { AppContext } from "../context/Context";
 import { BsBrightnessHigh } from "react-icons/bs";
 import { MdOutlineDarkMode } from "react-icons/md";
-import Resume from "../assets/AnjaliResume.pdf"
+import Resume from "../assets/resume.pdf"
 
 const Navbar = () => {
     const menuRef = useRef(null);
@@ -71,7 +71,7 @@ const Navbar = () => {
 
                 <TiThMenu className="visible md:hidden h-6 w-6 cursor-pointer" ref={menuRef} />
 
-                
+
                 <div
                     className="
                         nav-links
@@ -156,3 +156,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
+

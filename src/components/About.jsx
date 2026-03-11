@@ -41,18 +41,11 @@ const About = () => {
 
     return (
         <div id="about" className="main-about  z-10 h-screen sm:h-auto min-h-[60dvh] sm:min-h-[80dvh] md:h-screen w-screen flex  justify-start sm:justify-center  items-center md:flex-row ">
-            {/* <div className="about1 h-[50%] md:h-full w-[40dvw] justify-center items-center  ">
-                <div className="myAboutPic about-comp md:block  hidden h-[80%] min-w-65 min-h-62.5 sm:w-[42%]  md:w-[52%]  lg:w-[58%] mt-10  z-10 ">
-                    <div className="hero-img z-0 bg-cover bg-center bg-black border-5  h-full w-full rounded-bl-full">
-                        <img src={myPic} alt="myPic" className="rounded-bl-full bg-center opacity-100 h-full w-full" />
-                    </div>
-                </div>
-            </div> */}
             <div className="about2  h-full pb-12 md:pb-0 md:w-[60dvw]   flex flex-col  justify-center  sm:items-start  gap-7 sm:gap-15 lg:gap-10 ">
                 <h1 className="text-4xl md:text-5xl font-normal tracking-[0.3em] uppercase mb-12 relative
                 after:content-[''] after:absolute after:left-1/2 after:-bottom-3 after:h-[1px] after:w-16 
                 after:-translate-x-1/2 after:bg-gray-400 hover:after:w-28 after:transition-all">
-                About Me
+                    About Me
                 </h1>
                 <div className="about-p-div translate-y-10   px-8  md:p-0 md:w-[90%] h-auto  flex flex-col w-full   min-h-fit space-x-4">
                     <p className="about-p text-sm sm:text-[1em] lg:text-lg">
@@ -65,15 +58,15 @@ const About = () => {
                         <span className="about-comp about-p-span text-justify">
                             I specialize in building responsive, modern web applications using technologies like
                             <span className="highlighted-text"> React.js</span>, <span className="highlighted-text">Next.js</span>,
-                            &nbsp;<span className="highlighted-text">Node.js</span>, <span className="highlighted-text"> Express.js</span>,
+                            &nbsp;<span className="highlighted-text">Node.js</span>, <span className="highlighted-text"> Express.js, PostgreSQL</span>,
                             and <span className="highlighted-text"> MongoDB</span>.
                         </span>
 
                         <span className="about-comp about-p-span text-justify">
-                             Alongside my web development skills, I have a strong foundation in &nbsp;
-                            <span className="highlighted-text">Data Structures & Algorithms</span> and practical experience with
+                            Alongside my web development skills, I have a strong foundation in&nbsp;
+                            <span className="highlighted-text">Data Structures</span> and practical experience with
                             programming languages including <span className="highlighted-text">Java</span>,&nbsp;
-                            <span className="highlighted-text"> and C</span>.
+                            <span className="highlighted-text">Python</span>.
                         </span>
 
                         <span className="about-comp about-p-span text-justify">
@@ -83,7 +76,7 @@ const About = () => {
                         </span>
 
                         <span className="about-comp about-p-span text-justify">
-                            I am deeply committed to mastering <span className="highlighted-text">full‑stack development</span>
+                            I am committed to mastering <span className="highlighted-text">full‑stack development</span>
                             &nbsp;principles and continuously learning to blend cutting‑edge web technologies with robust
                             software engineering practices.
                         </span>
@@ -91,15 +84,15 @@ const About = () => {
                 </div>
                 <div className='justify-between flex gap-10 '>
                     <button onClick={() => { handleScrollToSection("education") }}
-                    className="about-comp about-btn translate-y-10  bg-indigo-500 max-w-fit text-black p-2  px-6 min-w-fit text-lg flex flex-wrap rounded-lg md:font-semibold cursor-pointer ml-2
+                        className="about-comp about-btn translate-y-10  bg-indigo-500 max-w-fit text-black p-2  px-6 min-w-fit text-lg flex flex-wrap rounded-lg md:font-semibold cursor-pointer ml-2
                     hover:bg-indigo-400 hover:text-gray-600">
-                    Education
-                </button>
-                <button onClick={() => { handleScrollToSection("skills") }}
-                    className="about-comp about-btn translate-y-10  bg-indigo-500 max-w-fit text-black p-2  px-12 min-w-fit text-lg flex flex-wrap rounded-lg md:font-semibold cursor-pointer ml-2
+                        Education
+                    </button>
+                    <button onClick={() => { handleScrollToSection("skills") }}
+                        className="about-comp about-btn translate-y-10  bg-indigo-500 max-w-fit text-black p-2  px-12 min-w-fit text-lg flex flex-wrap rounded-lg md:font-semibold cursor-pointer ml-2
                     hover:bg-indigo-400 hover:text-gray-600">
-                   Skills
-                </button>
+                        Skills
+                    </button>
                 </div>
             </div>
         </div>

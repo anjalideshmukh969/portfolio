@@ -30,14 +30,14 @@ const Education = () => {
             institution: "Sagar Institute Of Research and Technology-Excellence, Bhopal",
             status: "Ongoing",
             year: "2023 - 2027",
-            cgpa: "CGPA: 7.2 ",
-            description: "Pursuing B.tech in Artificial-Intelligence & Data-Science,passionate about solving problems and building web applications. "
+            cgpa: "CGPA: 7.63 ",
+            description: "Pursuing B.tech in Artificial-Intelligence & Data-Science, passionate about solving problems and building web applications."
         },
         {
             id: 2,
             title: "Higher Secondary School",
-            subtitle: "Physics,Chemistry,Maths",
-            institution: "GHS School Paradsinga , Multai",
+            subtitle: "Physics, Chemistry, Mathamatics",
+            institution: "GHS School Paradsinga, Multai",
             status: "Completed",
             year: "2022 - 2023",
             cgpa: "Percentage: 80.6",
@@ -59,7 +59,7 @@ const Education = () => {
                         <div
                             key={edu.id}
                             className="edu-comp w-full h-auto rounded-xl border-l-4 border-l-indigo-500 py-5 px-6 text-lg flex flex-col gap-2 justify-center items-start
-                                       hover:scale-[1.02] bg-slate-700 backdrop-blur-sm">
+                                       hover:scale-[1.02] bg-gray-900 backdrop-blur-sm">
                             <div className="flex flex-col md:flex-row md:items-center md:justify-between w-full gap-2">
                                 <div className="flex flex-col">
                                     <span className="text-2xl font-semibold ">

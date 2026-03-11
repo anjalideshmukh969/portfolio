@@ -10,6 +10,9 @@ import { FaGitAlt } from "react-icons/fa";
 import { useGSAP } from "@gsap/react";
 import { SiTypescript } from "react-icons/si";
 import { SiJavascript } from "react-icons/si";
+import { SiPostgresql } from "react-icons/si";
+import { SiPostman, SiFirebase, SiVite } from "react-icons/si";
+import { FaServer } from "react-icons/fa";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
 
@@ -44,12 +47,11 @@ const Skills = () => {
             <h1 className="text-4xl md:text-5xl font-normal tracking-[0.3em] uppercase mb-12 relative
              after:content-[''] after:absolute after:left-1/2 after:-bottom-3 after:h-[1px] after:w-16 
              after:-translate-x-1/2 after:bg-gray-400 hover:after:w-28 after:transition-all">
-             My Skills
-             </h1>
+                My Skills
+            </h1>
 
 
             <div className=" boxes-container  container gap-7 h-[80%] w-[80%] flex  flex-wrap justify-center items-center   ">
-
                 <div className="box text-lg flex flex-col gap-2 justify-center items-center">
                     <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
                         target="_blank" rel="noreferrer">
@@ -114,8 +116,40 @@ const Skills = () => {
                     </a>TypeScript
                 </div>
 
+                <div className="box text-lg flex flex-col gap-2 justify-center items-center">
+                    <a href="https://www.postgresql.org/docs/" target="_blank" rel="noreferrer">
+                        <SiPostgresql className="h-20 w-20 md:hover:scale-110 cursor-pointer text-blue-500 rounded-2xl" />
+                    </a> PostgreSQL
+                </div>
 
+                <div className="box text-lg flex flex-col gap-2 justify-center items-center">
+                    <a href="https://www.postman.com/"
+                        target="_blank" rel="noreferrer">
+                        <SiPostman className="h-20 w-20 md:hover:scale-110 cursor-pointer text-orange-500 rounded-2xl" />
+                    </a>Postman
+                </div>
 
+                <div className="box text-lg flex flex-col gap-2 justify-center items-center">
+                    <a href="https://firebase.google.com/"
+                        target="_blank" rel="noreferrer">
+                        <SiFirebase className="h-20 w-20 md:hover:scale-110 cursor-pointer text-yellow-500 rounded-2xl" />
+                    </a>Firebase
+                </div>
+
+                <div className="box text-lg flex flex-col gap-2 justify-center items-center">
+                    <a href="https://restfulapi.net/"
+                        target="_blank" rel="noreferrer">
+                        <FaServer className="h-20 w-20 md:hover:scale-110 cursor-pointer text-green-500 rounded-2xl" />
+                    </a>
+                    REST API
+                </div>
+
+                <div className="box text-lg flex flex-col gap-2 justify-center items-center">
+                    <a href="https://vitejs.dev/"
+                        target="_blank" rel="noreferrer">
+                        <SiVite className="h-20 w-20 md:hover:scale-110 cursor-pointer text-purple-500 rounded-2xl" />
+                    </a>Vite
+                </div>
 
             </div>
         </div>
