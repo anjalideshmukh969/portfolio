@@ -2,7 +2,6 @@ import React from 'react';
 
 const Project = (props) => {
     const myProject = props.myProject;
-
     return (
         <>
             <div className="project-part1 h-[60%] sm:h-full w-full sm:w-[45%] bg-gray-900 rounded-t-lg sm:rounded-t-none sm:rounded-l-lg flex justify-center items-center py-1 sm:py-1 px-4 sm:px-2">
@@ -12,7 +11,7 @@ const Project = (props) => {
                 <h1 className="text-2xl font-bold">{myProject.title}</h1>
                 <p className="block project-p text-sm sm:text-lg ">{myProject.desc}</p>
                 <div className="tech-stack flex gap-2 flex-wrap">
-                    {myProject.techStack.map((tech,index)=>(
+                    {myProject.techStack.map((tech, index) => (
                         <span key={index} className="h-fit w-fit py-1 px-2 sm:px-3 text-sm rounded-md bg-[#405590]">{tech}</span>
                     ))}
                 </div>
@@ -22,5 +21,4 @@ const Project = (props) => {
     );
 
 };
-
 export default Project;
