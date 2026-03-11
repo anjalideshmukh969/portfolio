@@ -53,7 +53,6 @@ const Projects = () => {
         techStack: ["HTML", "CSS", "Tailwind",],
         vc_link: "https://github.com/anjalideshmukh969/Animations"
     }];
-    
     useGSAP(() => {
         let sections = gsap.utils.toArray(".project-box");
         gsap.to(sections, {
@@ -77,11 +76,9 @@ const Projects = () => {
              after:-translate-x-1/2 after:bg-gray-400 hover:after:w-28 after:transition-all">
                 Projects
             </h1>
-
             <div ref={containerRef} className="projects-container relative w-full h-[80dvh] sm:h-[65dvh]  overflow-hidden">
                 <div ref={projectsRef} className="projects-scroll-container absolute left-0 flex h-full items-center gap-14 pl-10"
                     style={{ width: "max-content" }}>
-
                     {projects.map((project) => {
                         return <div key={project.id} className="project-box h-[90%] sm:h-[80%] lg:w-[65dvw] xl:w-[60dvw] sm:w-[90dvw] w-[95dvw] max-w-screen min-w-[60dvw] rounded-lg  flex flex-col sm:flex-row justify-center items-center shadow-xl">
                             <Project myProject={project} />

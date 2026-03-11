@@ -56,7 +56,6 @@ const Navigation = () => {
                 gsap.set(asideRef.current, { right: "-100%" });
             }
         });
-
         menuRef.current?.addEventListener("click", handleMenuClick);
         closeRef.current?.addEventListener("click", handleCloseClick);
         window.addEventListener("resize", handleResize);
