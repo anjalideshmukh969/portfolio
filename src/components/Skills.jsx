@@ -123,30 +123,25 @@ const Skills = () => {
                 </div>
 
                 <div className="box text-lg flex flex-col gap-2 justify-center items-center">
-                    <a href="https://www.postman.com/"
-                        target="_blank" rel="noreferrer">
+                    <a href="https://www.postman.com/" target="_blank" rel="noreferrer">
                         <SiPostman className="h-20 w-20 md:hover:scale-110 cursor-pointer text-orange-500 rounded-2xl" />
                     </a>Postman
                 </div>
 
                 <div className="box text-lg flex flex-col gap-2 justify-center items-center">
-                    <a href="https://firebase.google.com/"
-                        target="_blank" rel="noreferrer">
+                    <a href="https://firebase.google.com/" target="_blank" rel="noreferrer">
                         <SiFirebase className="h-20 w-20 md:hover:scale-110 cursor-pointer text-yellow-500 rounded-2xl" />
                     </a>Firebase
                 </div>
 
                 <div className="box text-lg flex flex-col gap-2 justify-center items-center">
-                    <a href="https://restfulapi.net/"
-                        target="_blank" rel="noreferrer">
+                    <a href="https://restfulapi.net/" target="_blank" rel="noreferrer">
                         <FaServer className="h-20 w-20 md:hover:scale-110 cursor-pointer text-green-500 rounded-2xl" />
-                    </a>
-                    REST API
+                    </a>REST API
                 </div>
 
                 <div className="box text-lg flex flex-col gap-2 justify-center items-center">
-                    <a href="https://vitejs.dev/"
-                        target="_blank" rel="noreferrer">
+                    <a href="https://vitejs.dev/" target="_blank" rel="noreferrer">
                         <SiVite className="h-20 w-20 md:hover:scale-110 cursor-pointer text-purple-500 rounded-2xl" />
                     </a>Vite
                 </div>
@@ -155,5 +150,4 @@ const Skills = () => {
         </div>
     );
 };
-
 export default Skills;
