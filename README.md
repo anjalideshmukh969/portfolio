@@ -10,11 +10,17 @@ Projects showcase section, About me and skills section ,Contact form, Clean, res
 
 🛠️ Technologies Used
 React
+
 Vite
+
 HTML
-CSS
+
+CSS (tailwindcss)
+
 JavaScript
+
 GSAP
+
 Scrolltrigger
 
 Contact
