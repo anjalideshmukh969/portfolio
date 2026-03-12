@@ -1,3 +1,25 @@
+This is my personal portfolio website that showcases my projects, skills, and experience as a developer. It highlights my work, technical abilities, and provides a way to contact me.
+
+🚀 Features
+
+Responsive portfolio design
+
+Projects showcase section
+
+About me section
+
+Contact form
+
+Clean and modern UI
+
+🛠️ Technologies Used
+React
+Vite
+HTML
+CSS
+JavaScript
+
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
