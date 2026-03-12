@@ -48,7 +48,7 @@ const Education = () => {
         <div id="education" className="mx-auto h-auto min-h-screen w-screen flex flex-col pt-0 sm:pt-[15dvh] items-center gap-7 z-10 px-4 ">
             {/* Header Section */}
             <h1 className="text-4xl md:text-5xl font-normal tracking-[0.3em] uppercase mb-12 relative
-             after:content-[''] after:absolute after:left-1/2 after:-bottom-3 after:h-[1px] after:w-16 
+             after:content-[''] after:absolute after:left-1/2 after:-bottom-3 after:h-px after:w-16 
              after:-translate-x-1/2 after:bg-gray-400 hover:after:w-28 after:transition-all">
              Education
              </h1>
