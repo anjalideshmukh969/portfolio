@@ -9,7 +9,6 @@ const Navigation = () => {
     const menuRef = useRef(null)
     const closeRef = useRef(null);
     const asideRef = useRef(null);
-
     const [showAside, setShowAside] = useState(false);
 
     const scrollToSection = (sectionId) => {
@@ -57,7 +56,6 @@ const Navigation = () => {
                 gsap.set(asideRef.current, { right: "-100%" });
             }
         });
-
         menuRef.current?.addEventListener("click", handleMenuClick);
         closeRef.current?.addEventListener("click", handleCloseClick);
         window.addEventListener("resize", handleResize);
@@ -73,7 +71,6 @@ const Navigation = () => {
         gsap.to('.good', { rotation: 180 });
         setShowAside(false);
     });
-
   return (
     <>
             <div  className="main-nav w-dvw sticky flex top-0  justify-between  items-center  h-[10dvh] px-5 ">
