@@ -1,6 +1,6 @@
 Persnol Portfolio
 
-This is my personal portfolio website that showcases my projects, skills, and experience as a developer. It highlights my work, technical abilities, and provides a way to contact me.
+This is my personal portfolio website that showcases my projects, skills, and experience as a developer. It highlights my work, technical abilities.
 
 🚀 Features
 
