@@ -23,6 +23,8 @@ GSAP
 
 Scrolltrigger
 
+Zustand 
+
 Contact
 If you'd like to connect with me:
 
