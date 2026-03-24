@@ -36,6 +36,8 @@ Zustand
 If you'd like to connect or collaborate:
 
 GitHub: https://github.com/anjalideshmukh969
+
 LinkedIn: https://linkedin.com/in/anjalideshmukh-
+
 Email: anjalideshmukh2541@gmail.com
 
