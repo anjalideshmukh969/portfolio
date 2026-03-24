@@ -3,6 +3,7 @@ Personal Portfolio
 This is my personal portfolio website, designed to showcase my projects, technical skills, and experience as a developer. It reflects my passion for building modern, user-friendly web applications and highlights my ability to create responsive and engaging digital experiences.
 
 🚀 Features
+
 Fully responsive and modern portfolio design
 
 Projects showcase section to highlight my work
