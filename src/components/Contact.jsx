@@ -64,7 +64,7 @@ const Contact = () => {
       >
         {/* Input wrapper */}
         {[
-          { name: "name", type: "text", placeholder: "Your Name" },
+          { name: "name", type: "text", placeholder: "Your Name." },
           { name: "email", type: "email", placeholder: "Your Email" },
           { name: "subject", type: "text", placeholder: "Subject" },
         ].map((field) => (
@@ -90,7 +90,6 @@ const Contact = () => {
             )}
           </div>
         ))}
-
         {/* Message */}
         <div className="flex flex-col gap-1">
           <textarea

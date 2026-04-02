@@ -9,7 +9,6 @@ import ecomm from "../assets/ecomm.png";
 import emart from "../assets/e-mart.jpeg"
 import oliv from "../assets/oliv.jpeg"
 
-
 gsap.registerPlugin(ScrollTrigger);
 const Projects = () => {
     const containerRef = useRef(null);
