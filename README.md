@@ -6,20 +6,31 @@ This is my personal portfolio website, crafted to showcase my projects, technica
 
 
 🚀 Features
+
 Responsive Design – Optimized for all devices, from mobile to desktop
+
 Project Showcase – A dedicated section highlighting my best work
+
 About Me – Insight into my background, skills, and interests
+
 Interactive Contact Form – Easy way to connect and collaborate
+
 Smooth Animations – Enhanced UX using modern animation techniques
+
 Clean UI/UX – Minimal, elegant, and visually appealing design
 
 
 
 🛠️ Tech Stack
+
 Frontend: React, Vite
+
 Styling: Tailwind CSS, HTML5, CSS3
+
 Programming: JavaScript
+
 Animations: GSAP (ScrollTrigger)
+
 State Management: Zustand
 
 
