@@ -53,7 +53,15 @@ const Projects = () => {
         desc: "Crafted Olive -webflow e-commerce using Tailwind, a utility first css framework.Leveraging utility-first approach has helped me sharpen my frontend skills, streamlining my workflow and improving overall development efficiency.",
         techStack: ["HTML", "CSS", "Tailwind",],
         vc_link: "https://github.com/anjalideshmukh969/Animations"
-    }];
+    },
+    {
+        id: 6,
+        title: "SafePath",
+        img: emart,
+        desc: "AI-driven personal safety assistant combining geolocation, maps, AI (Gemini/OpenAI), and the MERN stack to make urban navigation safer and smarter.",
+        techStack: ["React.js", "Typescript", "TailwindCSS", "Supabase","Next.js","shadcn/ui","Gemini AI" ,"OpenAI" ,"Mapbox"],
+        vc_link: "https://github.com/anjalideshmukh969/Typescript"
+    },];
     useGSAP(() => {
         let sections = gsap.utils.toArray(".project-box");
         gsap.to(sections, {
