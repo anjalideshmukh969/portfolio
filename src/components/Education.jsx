@@ -31,7 +31,7 @@ const Education = () => {
             status: "Ongoing",
             year: "2023 - 2027",
             cgpa: "CGPA: 7.63 ",
-            description: "Pursuing B.tech in Artificial-Intelligence & Data-Science, passionate about solving problems and building web applications."
+            description: "Pursuing B.tech in Artificial-Intelligence & Data-Science."
         },
         {
             id: 2,
