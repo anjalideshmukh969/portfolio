@@ -4,11 +4,9 @@ import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/all";
 // import myPic from "../assets/temp3.jpeg";
 
-
 gsap.registerPlugin(ScrollTrigger);
 
 const About = () => {
-
     const scrollToSection = (sectionId) => {
         const element = document.getElementById(sectionId);
         if (element) {
@@ -47,38 +45,49 @@ const About = () => {
                 after:-translate-x-1/2 after:bg-gray-400 hover:after:w-28 after:transition-all">
                     About Me
                 </h1>
-                <div className="about-p-div translate-y-10   px-8  md:p-0 md:w-[90%] h-auto  flex flex-col w-full   min-h-fit space-x-4">
-                    <p className="about-p text-sm sm:text-[1em] lg:text-lg">
-                        <span className="about-comp about-p-span text-justify">
-                            Hello! I'm <span className="highlighted-text">Anjali</span>, an aspiring&nbsp;
-                            <span className="highlighted-text">Computer Science Undergraduate</span> and passionate&nbsp;
-                            <span className="highlighted-text">MERN Stack Developer</span>.
+                <div className="about-p-div translate-y-10 px-8 md:p-0 md:w-[90%] h-auto flex flex-col w-full min-h-fit space-x-4">
+                    <p className="about-p text-base sm:text-lg lg:text-xl leading-8 text-justify">
+                        <span className="about-comp about-p-span">
+                            I am a passionate
+                            <span className="highlighted-text"> Software Developer</span> with hands-on experience in building
+                            <span className="highlighted-text"> scalable</span>,
+                            <span className="highlighted-text"> responsive</span>, and
+                            <span className="highlighted-text"> user-centric web applications</span> using the
+                            <span className="highlighted-text"> MERN stack</span>.
                         </span>
 
-                        <span className="about-comp about-p-span text-justify">
-                            I specialize in building responsive, modern web applications using technologies like
-                            <span className="highlighted-text"> React.js</span>, <span className="highlighted-text">Next.js</span>,
-                            &nbsp;<span className="highlighted-text">Node.js</span>, <span className="highlighted-text"> Express.js, PostgreSQL</span>,
-                            and <span className="highlighted-text"> MongoDB</span>.
+                        <span className="about-comp about-p-span">
+                            My expertise includes
+                            <span className="highlighted-text"> MongoDB</span>,
+                            <span className="highlighted-text"> Express.js</span>,
+                            <span className="highlighted-text"> React.js</span>,
+                            <span className="highlighted-text"> Node.js</span>,
+                            <span className="highlighted-text"> REST APIs</span>, and
+                            <span className="highlighted-text"> modern JavaScript (ES6+)</span>,
+                            enabling me to develop robust full-stack solutions tailored to real-world needs.
                         </span>
 
-                        <span className="about-comp about-p-span text-justify">
-                            Alongside my web development skills, I have a strong foundation in&nbsp;
-                            <span className="highlighted-text">Data Structures</span> and practical experience with
-                            programming languages including <span className="highlighted-text">Java</span>,&nbsp;
-                            <span className="highlighted-text">Python</span>.
+                        <span className="about-comp about-p-span">
+                            Beyond frontend and backend development, I bring strong knowledge in
+                            <span className="highlighted-text"> database architecture</span>,
+                            <span className="highlighted-text"> performance optimization</span>, and
+                            <span className="highlighted-text"> scalable server-side systems</span>.
+                            I also have practical experience with
+                            <span className="highlighted-text"> PostgreSQL</span> and
+                            <span className="highlighted-text"> CI/CD pipelines</span>, ensuring seamless deployment and maintainable workflows.
                         </span>
 
-                        <span className="about-comp about-p-span text-justify">
-                            My passion lies in the entire development lifecycle, from designing intuitive&nbsp;
-                            <span className="highlighted-text">UI/UX interfaces</span> to implementing scalable server architectures
-                            and efficient <span className="highlighted-text">database management</span> solutions.
+                        <span className="about-comp about-p-span">
+                            I am deeply committed to writing
+                            <span className="highlighted-text"> clean</span>,
+                            <span className="highlighted-text"> efficient</span>, and
+                            <span className="highlighted-text"> maintainable code</span>,
+                            while continuously learning and adapting to emerging technologies in the software development ecosystem.
                         </span>
 
-                        <span className="about-comp about-p-span text-justify">
-                            I am committed to mastering <span className="highlighted-text">full‑stack development</span>
-                            &nbsp;principles and continuously learning to blend cutting‑edge web technologies with robust
-                            software engineering practices.
+                        <span className="about-comp about-p-span">
+                            My goal is to create impactful digital experiences and deliver
+                            <span className="highlighted-text"> innovative software solutions</span> that combine technical excellence with exceptional user value.
                         </span>
                     </p>
                 </div>
