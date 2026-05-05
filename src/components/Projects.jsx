@@ -61,7 +61,16 @@ const Projects = () => {
         desc: "AI-driven personal safety assistant combining geolocation, maps, AI (Gemini/OpenAI), and the MERN stack to make urban navigation safer and smarter.",
         techStack: ["React.js", "Typescript", "TailwindCSS", "Supabase","Next.js","shadcn/ui","Gemini AI" ,"OpenAI" ,"Mapbox"],
         vc_link: "https://github.com/anjalideshmukh969/Typescript"
-    },];
+    },
+    {
+        id: 7,
+        title: "MockMentor",
+        // img: emart,
+        desc: "AI-driven mock interview platform that simulates interview and provide feedback based on the interview.",
+        techStack: ["React.js", "Javascript", "TailwindCSS", "Firebase","Node.js","Farmer motion","Gemini AI" ,"OpenAI" ,"Razorpay"],
+        vc_link: "https://github.com/anjalideshmukh969/MockMentor"
+    },
+];
     useGSAP(() => {
         let sections = gsap.utils.toArray(".project-box");
         gsap.to(sections, {
