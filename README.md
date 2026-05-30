@@ -23,7 +23,7 @@ Clean UI/UX – Minimal, elegant, and visually appealing design
 
 🛠️ Tech Stack
 
-Frontend: React, Vite
+Frontend: React
 
 Styling: Tailwind CSS, HTML5, CSS3
 
@@ -47,4 +47,3 @@ LinkedIn: https://linkedin.com/in/anjalideshmukh-
 
 
 Email: anjalideshmukh2541@gmail.com
-
